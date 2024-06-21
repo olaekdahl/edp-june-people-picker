@@ -1,1 +1,178 @@
-[{"name":"Allison"},{"name":"Youssef"}]
+[
+  {
+    "id": 1,
+    "first": "Abdirabi",
+    "last": "Mohamed",
+    "age": 29,
+    "email": "abdirabi@gmail.com",
+    "imgUrl": "/assets/images/Abdirabi_Mohamed.png"
+  },
+  {
+    "id": 2,
+    "first": "Allison",
+    "last": "Carns",
+    "age": 31,
+    "email": "allison.carns@yahoo.com",
+    "imgUrl": "/assets/images/Allison_Carns.png"
+  },
+  {
+    "id": 3,
+    "first": "Avaneesh",
+    "last": "Sathish",
+    "age": 27,
+    "email": "avaneesh.sathish@protonmail.com",
+    "imgUrl": "/assets/images/Avaneesh_Sathish.png"
+  },
+  {
+    "id": 4,
+    "first": "Chía",
+    "last": "Xiong",
+    "age": 34,
+    "email": "theRealChia@outlook.com",
+    "imgUrl": "/assets/images/Chía_Xiong.png"
+  },
+  {
+    "id": 5,
+    "first": "Chris",
+    "last": "Likorama",
+    "age": 22,
+    "email": "chris@icloud.com",
+    "imgUrl": "/assets/images/Chris_Likorama.png"
+  },
+  {
+    "id": 6,
+    "first": "Donesha",
+    "last": "Noble",
+    "age": 37,
+    "email": "donesha.noble@gmail.com",
+    "imgUrl": "/assets/images/Donesha_Noble.png"
+  },
+  {
+    "id": 7,
+    "first": "Doxa",
+    "last": "Asibery",
+    "age": 24,
+    "email": "superDoxa@yahoo.com",
+    "imgUrl": "/assets/images/Doxa_Asibery.png"
+  },
+  {
+    "id": 8,
+    "first": "Drew",
+    "last": "Cavar",
+    "age": 33,
+    "email": "drew.cavar@protonmail.com",
+    "imgUrl": "/assets/images/Drew_Cavar.png"
+  },
+  {
+    "id": 9,
+    "first": "Ellie",
+    "last": "Delea",
+    "age": 21,
+    "email": "elizabeth.delea@icloud.com",
+    "imgUrl": "/assets/images/Elizabeth_Delea.png"
+  },
+  {
+    "id": 10,
+    "first": "Eric",
+    "last": "Kingue",
+    "age": 38,
+    "email": "eric_the_king@outlook.com",
+    "imgUrl": "/assets/images/Eric_Kingue.png"
+  },
+  {
+    "id": 11,
+    "first": "Fab",
+    "last": "Claure",
+    "age": 26,
+    "email": "fab.claure@gmail.com",
+    "imgUrl": "/assets/images/Fabiola_Claure.png"
+  },
+  {
+    "id": 12,
+    "first": "Guillermo",
+    "last": "Sandoval Garcia",
+    "age": 35,
+    "email": "guillermo.sandoval_garcia@yahoo.com",
+    "imgUrl": "/assets/images/Guillermo_Sandoval_Garcia.png"
+  },
+  {
+    "id": 13,
+    "first": "Ian",
+    "last": "Grzembski",
+    "age": 23,
+    "email": "ian@theHatGuyInc.com",
+    "imgUrl": "/assets/images/Ian_Grzembski.png"
+  },
+  {
+    "id": 14,
+    "first": "Jacob",
+    "last": "Hogrefe",
+    "age": 40,
+    "email": "jacob.hogrefe@icloud.com",
+    "imgUrl": "/assets/images/Jacob_Hogrefe.png"
+  },
+  {
+    "id": 15,
+    "first": "Lindsey",
+    "last": "Sutermeister",
+    "age": 30,
+    "email": "lindsey@outlook.com",
+    "imgUrl": "/assets/images/Lindsey_Sutermeister.png"
+  },
+  {
+    "id": 16,
+    "first": "Nicole",
+    "last": "Blanchette",
+    "age": 28,
+    "email": "blanch.nicolette@gmail.com",
+    "imgUrl": "/assets/images/Nicole_Blanchette.png"
+  },
+  {
+    "id": 17,
+    "first": "Ridwan",
+    "last": "Abdi",
+    "age": 32,
+    "email": "ra@yahoo.com",
+    "imgUrl": "/assets/images/Ridwan_Abdi.png"
+  },
+  {
+    "id": 18,
+    "first": "Rohan",
+    "last": "Kelley",
+    "age": 25,
+    "email": "rohan@yahoo.com",
+    "imgUrl": "/assets/images/Rohan_Kelley.png"
+  },
+  {
+    "id": 19,
+    "first": "Rushil",
+    "last": "Patel",
+    "age": 39,
+    "email": "rushil.patel@protonmail.com",
+    "imgUrl": "/assets/images/Rushil_Patel.png"
+  },
+  {
+    "id": 20,
+    "first": "Sneha",
+    "last": "Malneddi",
+    "age": 39,
+    "email": "sneha.malneddi@protonmail.com",
+    "imgUrl": "/assets/images/Sneha_Malneddi.png"
+  },
+  {
+    "id": 21,
+    "first": "Stuti",
+    "last": "Ray",
+    "age": 39,
+    "email": "ray@icloud.com",
+    "imgUrl": "/assets/images/Stuti_Ray.png"
+  },
+  {
+    "id": 22,
+    "first": "Youssef",
+    "last": "Kafel",
+    "age": 39,
+    "email": "youssef.kafel@outlook.com",
+    "imgUrl": "/assets/images/Youssef_Kafel.png"
+  }
+]
