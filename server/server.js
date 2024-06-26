@@ -31,6 +31,7 @@ app.delete('/api/people/:id', (req, res) => {
 });
 
 app.use(express.static("../client"));
+app.use(express.static("./assets"));
 
 app.listen(port);
 
