@@ -1,0 +1,22 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  --color_fg_1: black;
+  --color_bg_1: white;
+  --color_fg_2: darkblue;
+  --color_bg_2: lightgrey;
+}
+
+#people-list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.personCard {
+  background-color: var(--color_bg_2);
+  overflow: hidden;
+
+  & div:first-child {
+    background-color: red;
+  }
+}
