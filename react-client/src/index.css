@@ -1,3 +1,12 @@
 :root {
   font-family: Arial, Helvetica, sans-serif;
+
+  --color-fg-1: rgb(3, 10, 7);
+  --color-bg-1: rgb(246, 252, 249);
+  --color-fg-2: rgb(66, 194, 147);
+  --color-bg-2: rgb(164, 156, 223);
+  --color-fg-3: rgb(164, 105, 207);
+
+  color: var(--color-fg-1);
+  background-color: var(--color-bg-1);
 }

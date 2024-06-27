@@ -1,26 +1,22 @@
-import { useEffect, useState } from 'react'
 import { ListOfPeople } from './ListOfPeople'
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes, Link, Navigate } from 'react-router-dom';
 import './App.css';
 import { AboutUs, ContactUs } from './Other';
 
 function App() {
-  const [people, setPeople] = useState([])
-  useEffect(() => {
-    fetchPeople();
-  }, []);
   return (
     <>
       <header>
         <nav>
-          <a href="/people">people</a>
+          <Link to="/people">people</Link>
           <Link to="/about-us">About us</Link>
-          <a href="/contact-us">contact us</a>
+          <Link to="/contact-us">contact us</Link>
         </nav>
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<ListOfPeople people={people} />} />
+          <Route path="/people" element={<ListOfPeople />} />
+          <Route path="/" element={<Navigate to="/people" />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
@@ -32,12 +28,6 @@ function App() {
   )
 
 
-  function fetchPeople() {
-    const url = `/api/people`
-    fetch(url)
-      .then(res => res.json())
-      .then(ppl => setPeople(ppl))
-  }
 }
 
 export default App
