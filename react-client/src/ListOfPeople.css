@@ -1,0 +1,7 @@
+.ListOfPeople {
+
+  & section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,8 +1,9 @@
+import './Person.css';
 
 export function Person(props) {
   const person = props.person;
   return (
-    <section style={styles.wrapper} className="personCard" data-id={person.id}>
+    <section className="Person" data-id={person.id}>
       <div>
         <img src={person.imgUrl} alt="profile pic" />
         <p>{person.first} {person.last}</p>
@@ -13,8 +14,4 @@ export function Person(props) {
       </div>
     </section>
   )
-}
-
-const styles = {
-  wrapper: { border: "1px solid black", },
 }
