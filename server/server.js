@@ -27,7 +27,7 @@ app.get('/api/people/', async (req, res) => {
     res.json(people);
 } catch (err) {
     console.error("Error:", err);
-    res.status(500).send("Hmmm, something smells... No socks for you! ☹");
+    res.status(500).send("Hmmm, something smells... No people for you! ☹");
 }
 });
 
@@ -36,8 +36,9 @@ app.get('/api/people/:id', async (req, res) => {
   const db = client.db(dbName);
   const collection = db.collection(collectionName);
   const { id } = req.params;
-  console.log("id:"+id);
-  const person = await collection.findOne({ _id: new ObjectId(id) });
+  const numberID = Number(id);
+  console.log("id:"+Number(id));
+  const person = await collection.findOne({"id":numberID});
   if (person) {
     res.json(person);
   } else {
@@ -49,10 +50,11 @@ app.get('/api/people/:id', async (req, res) => {
 app.delete('/api/people/:id', async (req, res) => {
   try {
     const { id } = req.params;
+    const numberID = Number(id);
     const client = await MongoClient.connect(url);
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
-    const result = await collection.deleteOne({ _id: new ObjectId(id) });
+    const result = await collection.deleteOne({"id":numberID});
     if (result.deletedCount === 1) {
         res.status(200).send('Person deleted successfully');
     } else {
