@@ -30,8 +30,13 @@ app.delete('/api/people/:id', (req, res) => {
   res.send(200, "Delete was successful")
 });
 
-app.use(express.static("../client"));
-app.use(express.static("./assets"));
+// Other static assets like images 
+app.use("/assets/images", express.static("./assets/images"));
+// The vanilla JS client - Now using the React app instead
+// app.use(express.static("../client"));
+// The *COMPILED* version of the React client app
+app.use(express.static("../react-client/dist"));
+app.use("/people", express.static("../react-client/dist/index.html"));
 
 app.listen(port);
 

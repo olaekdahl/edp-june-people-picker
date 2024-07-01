@@ -2,10 +2,6 @@
   "name": "people-picker",
   "version": "0.0.1",
   "description": "Picks a random person from a list of known people",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "EDP Peoples",
   "license": "ISC"
 }
