@@ -5,7 +5,9 @@ import './ListOfPeople.css';
 export const ListOfPeople = () => {
   const [unpickedPeople, setUnpickedPeople] = useState([])
   const [pickedPeople, setPickedPeople] = useState([])
+  const [deferredPeople, setDeferredPeople] = useState([])
   const [currentPerson, setCurrentPerson] = useState(undefined);
+
   useEffect(() => {
     fetchPeople();
   }, []);
@@ -13,6 +15,7 @@ export const ListOfPeople = () => {
   return (
     <div className="ListOfPeople">
       <button onClick={() => pickPerson()}>Pick the next person</button>
+      <button onClick={() => deferPerson()}>Defer to the end</button>
       <h1>Current person</h1>
       {currentPerson &&
         <Person person={currentPerson} />}
@@ -23,6 +26,10 @@ export const ListOfPeople = () => {
       <h1>Picked People</h1>
       <section>
         {pickedPeople.map(person => <Person person={person} key={person.id} />)}
+      </section>
+      <h1>Deferred People</h1>
+      <section>
+        {deferredPeople.map(person => <Person person={person} key={person.id} />)}
       </section>
     </div>
   );
@@ -35,10 +42,21 @@ export const ListOfPeople = () => {
   }
 
   function pickPerson() {
-    const pickedPerson = unpickedPeople[Math.floor(Math.random() * unpickedPeople.length)]
-    setPickedPeople([...pickedPeople, pickedPerson]);
-    setUnpickedPeople(unpickedPeople.filter(p => p !== pickedPerson));
+    // choose which list to pull from
+    const list = unpickedPeople.length === 0 ? deferredPeople : unpickedPeople;
+    const pickedPerson = list[Math.floor(Math.random() * list.length)];
+    if (currentPerson) setPickedPeople([...pickedPeople, currentPerson])
+    setUnpickedPeople(unpickedPeople.filter((person) => person !== pickedPerson));
     setCurrentPerson(pickedPerson);
+  }
+
+  // defer people to another list if not present
+  function deferPerson() {
+    if (currentPerson) {
+      setDeferredPeople([...deferredPeople, currentPerson]);
+      setPickedPeople(pickedPeople.filter((person) => person !== currentPerson))
+      pickPerson();
+    }
   }
 
 }
