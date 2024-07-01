@@ -5,7 +5,7 @@
     "last": "Mohamed",
     "age": 29,
     "email": "abdirabi@gmail.com",
-    "imgUrl": "/assets/images/Abdirabi_Mohamed.png"
+    "imgUrl": "/assets/images/abdirabi_mohamed.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "last": "Carns",
     "age": 31,
     "email": "allison.carns@yahoo.com",
-    "imgUrl": "/assets/images/Allison_Carns.png"
+    "imgUrl": "/assets/images/allison_carns.png"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "last": "Sathish",
     "age": 27,
     "email": "avaneesh.sathish@protonmail.com",
-    "imgUrl": "/assets/images/Avaneesh_Sathish.png"
+    "imgUrl": "/assets/images/avaneesh_sathish.png"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "last": "Xiong",
     "age": 34,
     "email": "theRealChia@outlook.com",
-    "imgUrl": "/assets/images/Chia_Xiong.png"
+    "imgUrl": "/assets/images/chia_xiong.png"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "last": "Likorama",
     "age": 22,
     "email": "chris@icloud.com",
-    "imgUrl": "/assets/images/Chris_Likorama.png"
+    "imgUrl": "/assets/images/chris_likorama.png"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "last": "Noble",
     "age": 37,
     "email": "donesha.noble@gmail.com",
-    "imgUrl": "/assets/images/Donesha_Noble.png"
+    "imgUrl": "/assets/images/donesha_noble.png"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "last": "Asibery",
     "age": 24,
     "email": "superDoxa@yahoo.com",
-    "imgUrl": "/assets/images/Doxa_Asibery.png"
+    "imgUrl": "/assets/images/doxa_asibery.png"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "last": "Cavar",
     "age": 33,
     "email": "drew.cavar@protonmail.com",
-    "imgUrl": "/assets/images/Drew_Cavar.png"
+    "imgUrl": "/assets/images/drew_cavar.png"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "last": "Delea",
     "age": 21,
     "email": "elizabeth.delea@icloud.com",
-    "imgUrl": "/assets/images/Elizabeth_Delea.png"
+    "imgUrl": "/assets/images/elizabeth_delea.png"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "last": "Kingue",
     "age": 38,
     "email": "eric_the_king@outlook.com",
-    "imgUrl": "/assets/images/Eric_Kingue.png"
+    "imgUrl": "/assets/images/eric_kingue.png"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "last": "Claure",
     "age": 26,
     "email": "fab.claure@gmail.com",
-    "imgUrl": "/assets/images/Fabiola_Claure.png"
+    "imgUrl": "/assets/images/fabiola_claure.png"
   },
   {
     "id": 12,
@@ -93,15 +93,15 @@
     "last": "Sandoval Garcia",
     "age": 35,
     "email": "guillermo.sandoval_garcia@yahoo.com",
-    "imgUrl": "/assets/images/Guillermo_Sandoval_Garcia.png"
+    "imgUrl": "/assets/images/guillermo_sandoval_garcia.png"
   },
   {
     "id": 13,
     "first": "Ian",
     "last": "Grzembski",
     "age": 20,
-    "email": "iGuy@theHatGuyInc.com",
-    "imgUrl": "/assets/images/Ian_Grzembski.png"
+    "email": "iGuy@fedoraInc.com",
+    "imgUrl": "/assets/images/ian_grzembski.png"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "last": "Hogrefe",
     "age": 40,
     "email": "jacob.hogrefe@icloud.com",
-    "imgUrl": "/assets/images/Jacob_Hogrefe.png"
+    "imgUrl": "/assets/images/jacob_hogrefe.png"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "last": "Sutermeister",
     "age": 30,
     "email": "lindsey@outlook.com",
-    "imgUrl": "/assets/images/Lindsey_Sutermeister.png"
+    "imgUrl": "/assets/images/lindsey_sutermeister.png"
   },
   {
     "id": 16,
@@ -133,7 +133,7 @@
     "last": "Abdi",
     "age": 32,
     "email": "ra@yahoo.com",
-    "imgUrl": "/assets/images/Ridwan_Abdi.png"
+    "imgUrl": "/assets/images/ridwan_abdi.png"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "last": "Kelley",
     "age": 25,
     "email": "rohan@yahoo.com",
-    "imgUrl": "/assets/images/Rohan_Kelley.png"
+    "imgUrl": "/assets/images/rohan_kelley.png"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "last": "Patel",
     "age": 39,
     "email": "rushil.patel@protonmail.com",
-    "imgUrl": "/assets/images/Rushil_Patel.png"
+    "imgUrl": "/assets/images/rushil_patel.png"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@
     "last": "Malneedi",
     "age": 39,
     "email": "sneha.Malneedi@protonmail.com",
-    "imgUrl": "/assets/images/Sneha_Malneedi.png"
+    "imgUrl": "/assets/images/sneha_malneedi.png"
   },
   {
     "id": 21,
@@ -165,7 +165,7 @@
     "last": "Ray",
     "age": 39,
     "email": "ray@icloud.com",
-    "imgUrl": "/assets/images/Stuti_Ray.png"
+    "imgUrl": "/assets/images/stuti_ray.png"
   },
   {
     "id": 22,
@@ -173,6 +173,6 @@
     "last": "Kafel",
     "age": 39,
     "email": "youssef.kafel@outlook.com",
-    "imgUrl": "/assets/images/Youssef_Kafel.png"
+    "imgUrl": "/assets/images/youssef_kafel.png"
   }
 ]
