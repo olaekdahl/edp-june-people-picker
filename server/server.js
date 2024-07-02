@@ -1,6 +1,5 @@
 import express from 'express';
-import { promises as fs } from 'fs';
-import { MongoClient, ObjectId } from 'mongodb';
+import { MongoClient } from 'mongodb';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
@@ -10,6 +9,7 @@ const url = process.env.MONGO_DB_URL;
 const dbName = process.env.MONGO_DB;
 const collectionName = process.env.MONGO_DB_COLLECTION;
 
+import { getAllPeople, getPerson } from './peopleRepository.js';
 const app = express();
 app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Middleware to parse JSON bodies
@@ -25,10 +25,10 @@ app.get('/api/people/', async (req, res) => {
     const collection = db.collection(collectionName);
     const people = await collection.find({}).toArray();
     res.json(people);
-} catch (err) {
+  } catch (err) {
     console.error("Error:", err);
     res.status(500).send("Hmmm, something smells... No people for you! ☹");
-}
+  }
 });
 
 app.get('/api/people/:id', async (req, res) => {
@@ -37,8 +37,8 @@ app.get('/api/people/:id', async (req, res) => {
   const collection = db.collection(collectionName);
   const { id } = req.params;
   const numberID = Number(id);
-  console.log("id:"+Number(id));
-  const person = await collection.findOne({"id":numberID});
+  console.log("id:" + Number(id));
+  const person = await collection.findOne({ "id": numberID });
   if (person) {
     res.json(person);
   } else {
@@ -54,16 +54,16 @@ app.delete('/api/people/:id', async (req, res) => {
     const client = await MongoClient.connect(url);
     const db = client.db(dbName);
     const collection = db.collection(collectionName);
-    const result = await collection.deleteOne({"id":numberID});
+    const result = await collection.deleteOne({ "id": numberID });
     if (result.deletedCount === 1) {
-        res.status(200).send('Person deleted successfully');
+      res.status(200).send('Person deleted successfully');
     } else {
-        res.status(404).send('Person not found');
+      res.status(404).send('Person not found');
     }
-} catch (err) {
+  } catch (err) {
     console.error('Error:', err);
     res.status(500).send('Hmm, something doesn\'t smell right... Error deleting person');
-}
+  }
 });
 
 // Other static assets like images 
