@@ -1,15 +1,29 @@
 import fs from 'fs';
+import { MongoClient } from 'mongodb';
 
-const db = {}
-db.people = JSON.parse(fs.readFileSync('../data/students.json'));
+const url = process.env.MONGO_DB_URL;
+const dbName = process.env.MONGO_DB;
+const collectionName = 'people'
 
-export const getAllPeople = () => db.people;
-export const getPerson = (id) => db.people.find(p => p.id === id);
+export const getAllPeople = async () => {
+  const client = await MongoClient.connect('mongodb://localhost:27017');
+  const db = client.db(dbName);
+  const collection = db.collection(collectionName);
+  const people = await collection.find({}).toArray();
+  return people;
+};
+export const getPerson = async (id) => {
+  const client = await MongoClient.connect(url);
+  const db = client.db(dbName);
+  const collection = db.collection(collectionName);
+  const person = await collection.findOne({ "id": id });
+  return person;
+}
 
-//TODO: Create the ability to delete a person by id.
-export const deletePerson = (id) => {
-  let personToDelete = getPerson(id)
-  db.people = db.people.filter(p => p !== personToDelete)
-  fs.writeFileSync('../data/students.json', JSON.stringify(db))
+export const deletePerson = async (id) => {
+  const client = await MongoClient.connect('mongodb://localhost:27017');
+  const db = client.db(dbName);
+  const collection = db.collection(collectionName);
+  const personToDelete = await collection.findOneAndDelete({ id: +id })
   return personToDelete
 }
