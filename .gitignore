@@ -1,6 +1,7 @@
 node_modules/
 .DS_Store
 data/db
+python/randomPeople.json
 
 # Logs
 logs
