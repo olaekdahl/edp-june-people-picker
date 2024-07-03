@@ -1,7 +1,6 @@
 import express from 'express';
-import { MongoClient } from 'mongodb';
 import cors from 'cors';
-import { deletePerson, getAllPeople, getPerson } from './peopleRepository.js';
+import { deletePerson, getAllPeople, getPerson, serverEnd } from './peopleRepository.js';
 
 const app = express();
 app.use(cors()); // Enable CORS for all routes
@@ -55,3 +54,9 @@ app.use("/people", express.static("../react-client/dist/index.html"));
 app.listen(port);
 
 console.log(`listening on port ${port}`);
+
+process.on('SIGINT', () => {
+  console.log('Shutting down gracefully')
+  serverEnd();
+  process.exit(0);
+})
